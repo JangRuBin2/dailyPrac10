@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button id="move-button">move!</button>
+  <div id="root">
+    <!-- 첫번째 부모 first -->
+    <div id="first">
+      <ul>
+        <li>first-1</li>
+        <li>first-2</li>
+        <li>first-3</li>
+      </ul>
+    </div>
+    <!-- 두번째 부모 second -->
+    <div id="second">
+      <ul>
+        <li>first-1</li>
+        <li>first-2</li>
+        <li>first-3</li>
+      </ul>
+    </div>
+  </div>
+  <script>
+    const first = document.getElementById("first");
+    const second = document.getElementById("second");
+    const moveButton = document.getElementById("move-button");
+  </script>
+</body>
+</html>
