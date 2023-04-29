@@ -30,6 +30,17 @@
     const first = document.getElementById("first");
     const second = document.getElementById("second");
     const moveButton = document.getElementById("move-button");
+// moveButton을 누르면 first의 첫번째 자식을 second의 마지막 자식으로 이동시켜라
+// li태그를 이동시켜라
+    moveButton.addEventListener("click",()=> {
+      // console.log(first.children[0]);
+      const firstChild = first.children[0].children[0];
+      // console.log(fistChild)
+      // console.log(second.children[0].children);
+      const secondChild = second.children[0].children[0];
+      second.append(firstChild);
+
+    })
   </script>
 </body>
 </html>
