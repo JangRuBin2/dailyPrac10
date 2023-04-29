@@ -6,6 +6,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
+<style>
+  button {
+    border-radius: 5px;
+    color: #333;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  #first {
+    width :500px;
+    height: 500px;
+    background-color: aqua;
+  }
+  #second {
+    width :500px;
+    height: 500px;
+    background-color: rgb(76, 0, 255);
+  }
+</style>
 <body>
   <button id="move-button">move!</button>
   <div id="root">
@@ -37,8 +55,8 @@
       const firstChild = first.children[0].children[0];
       // console.log(fistChild)
       // console.log(second.children[0].children);
-      const secondChild = second.children[0].children[0];
-      second.append(firstChild);
+      const secondChild = second.children[0].children[2];
+      secondChild.append(firstChild);
 
     })
   </script>
