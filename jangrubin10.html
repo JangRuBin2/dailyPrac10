@@ -45,6 +45,7 @@
     </div>
   </div>
   <script>
+    const root  = document.getElementById("root");
     const first = document.getElementById("first");
     const second = document.getElementById("second");
     const moveButton = document.getElementById("move-button");
@@ -57,7 +58,11 @@
       // console.log(second.children[0].children);
       const secondChild = second.children[0].children[2];
       secondChild.append(firstChild);
-
+      if(firstChild ===undefined) {
+        // console.log("없어 이제")
+        // console.log(root.children)
+        root.innerHTML ="";
+      }
     })
   </script>
 </body>
