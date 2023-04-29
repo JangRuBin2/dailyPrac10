@@ -58,10 +58,15 @@
       // console.log(second.children[0].children);
       const secondChild = second.children[0].children[2];
       secondChild.append(firstChild);
+      // 더이상 자식요소가 없을 때
       if(firstChild ===undefined) {
         // console.log("없어 이제")
         // console.log(root.children)
         root.innerHTML ="";
+        setTimeout(()=> {
+          // console.log("하이")
+          root.innerHTML= "하이";
+        },1000)
       }
     })
   </script>
